@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom"
 import { useAuthContext } from "./hooks/useAuthContext";
 
 import Dashboard from './pages/dashboard/Dashboard';
@@ -9,9 +9,10 @@ import Create from './pages/create/Create';
 
 import Navbar from './components/navbar/Navbar';
 import Sidebar from './components/sidebar/Sidebar';
+import OnlineUsers from "./components/onlineUsers/OnlineUsers";
 
 import './App.css'
-import { Redirect } from "react-router-dom";
+
 
 function App() {
   const { user, authIsReady } = useAuthContext()
@@ -46,9 +47,9 @@ function App() {
               </Route>
             </Switch>
           </div>
+          {user && <OnlineUsers />}
         </Router>
       )}
-
     </div>
   );
 }
