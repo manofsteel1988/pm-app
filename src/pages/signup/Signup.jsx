@@ -36,7 +36,7 @@ const Signup = () => {
   };
   return (
     <form onSubmit={handleSubmit} className="auth-form">
-      <h2>sign up</h2>
+      <h2>Sign up</h2>
       <label>
         <span>email:</span>
         <input
