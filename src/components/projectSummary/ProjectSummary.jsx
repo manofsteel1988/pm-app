@@ -17,6 +17,7 @@ const ProjectSummary = ({ project }) => {
     <div>
       <div className="project-summary">
         <h2 className="page-title">{project.name}</h2>
+        <h4>By {project.createdBy.displayName}</h4>
         <p className="due-date">
           Project due by {project.dueDate.toDate().toDateString()}
         </p>
