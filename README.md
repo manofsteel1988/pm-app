@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Project Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project allows for teams to collaborate on various project. It uses Firebase as a serverless tool for the backend and React for the frontend development.
 
-## Available Scripts
+## What the app looks like
+![image](https://user-images.githubusercontent.com/46341318/162326295-9860595c-7e78-4abc-8a13-9c5046eee0fc.png)
 
-In the project directory, you can run:
+## How to run the app
+1. Either fork or download the app and open the folder in the cli.
+2. Install all dependencies using 'npm i' command.
+3. Start the web server using 'npm start'. This will run React on port at http://localhost:3000/
 
-### `npm start`
+## How to create a project
+1. Create an account by clicking on the sign up button if you're connecting for the first time.
+2. After accessing the dashboard homepage, click on "New Project" that redirects to the create project page.
+3. Select the project title, write the project details, set a due date, a category, assign the project to one or multiple members, click "Add project".
+4. You are redirected to the dashboard page with the newly project created.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## User Stories
+- A user must sign up to have access.
+- When connected, a user views the dashboard.
+- A user can create a project.
+- A user can comment on a project.
+- A user can assign one or more users to a project.
+- A user can see who is connected.
+- A user can filter projects based on their category.
+- A user who created a project is the only one who is able to archive the project.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
+- Authentication
+  - account settings are stored in Firebase.
+  
+- Creating a project
+  - projects are stored in Firebase.
+  - projects created are displayed on the dashboard page.
 
-### `npm test`
+- Display users who created accounts
+  - these users can be assigned to any project
+  - users who are connected can be visible
+  - users credentials are stored in Firebase
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Assign one or more users to a project
 
-### `npm run build`
+- Display thumbnails for each users
+  - when creating an account, users must uplaod an image.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Add comments to projects
+  - comments are displayed on the project detail page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Filtering the projects based on their category
+  - the filter selection is displayed on the dashboard page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
+- firebase
+- date-fns
+- react-router-dom
+- react-select
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
